@@ -2,7 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 import Reflux from 'reflux';
 
-import JobStore from '../stores/jobStore';
+import ThreadStore from '../stores/threadStore';
 
 import Modal from '../components/modal'
 
@@ -15,9 +15,9 @@ export default class extends Reflux.Component {
 
   constructor (props) {
     super(props)
-    console.log(JobStore);
+    console.log(ThreadStore);
     this.state = {};
-    this.store = JobStore;
+    this.store = ThreadStore;
     this.onKeyDown = this.onKeyDown.bind(this)
   }
 
@@ -48,8 +48,8 @@ export default class extends Reflux.Component {
 
   render () {
     const { url, photos } = this.props
-    // console.log("inside index.js rendering, will log this.state");
-    // console.log(this.state);
+    console.log("inside index.js rendering, will log this.state");
+    console.log(this.state);
     return (
       <div className='list'>
         {

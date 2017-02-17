@@ -23,4 +23,4 @@ class ThreadStore extends Reflux.Store {
   }
 }
 
-export default JobStore;
+export default ThreadStore;
